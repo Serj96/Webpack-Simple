@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation">
+        </nav>
+    </header>
+      <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="section-title visually-hidden">Портфоліо</h1>
+          <ul class="portfolio-list list">
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__btn" type="button" id="add">Добавить</button>
+            </li>
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__btn" type="button" id="remove">Удалить</button>
+            </li>
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__btn" type="button">Заполнить</button>
+            </li>
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__btn" type="button">Очистить</button>
+            </li>
+          </ul>
+
+          <ul class="portfolio-cards list" id="list">
+            <li class="portfolio-cards__item" id="el1">
+              <div class="portfolio-link" >
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/technokrak_lg.jpg    1x,
+                        ./images/portfolio/technokrak_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/technokrak_md.jpg    1x,
+                        ./images/portfolio/technokrak_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/technokrak_sm.jpg    1x,
+                        ./images/portfolio/technokrak_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/technokrak_sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">Технокряк</h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" id="delete-btn">Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el2">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/poster_lg.jpg    1x,
+                        ./images/portfolio/poster_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/poster_md.jpg    1x,
+                        ./images/portfolio/poster_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/poster_sm.jpg    1x,
+                        ./images/portfolio/poster_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      class="cards-img"
+                      src="./images/portfolio/poster_sm.jpg"
+                      alt="Постер"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">
+                    Постер <span lang="en">Постер New Orlean vs Golden Star</span>
+                  </h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn >Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el3">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/restaurant-seafood_lg.jpg    1x,
+                        ./images/portfolio/restaurant-seafood_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/restaurant-seafood_md.jpg    1x,
+                        ./images/portfolio/restaurant-seafood_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/restaurant-seafood_sm.jpg    1x,
+                        ./images/portfolio/restaurant-seafood_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/restaurant-seafood_sm.jpg"
+                      alt="Ресторан"
+                      alt="Постер"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">Ресторан <span>Seafood</span></h2>
+                  
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el4">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project-prime_lg.jpg    1x,
+                        ./images/portfolio/project-prime_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project-prime_md.jpg    1x,
+                        ./images/portfolio/project-prime_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project-prime_sm.jpg    1x,
+                        ./images/portfolio/project-prime_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/project-prime_sm.jpg"
+                      alt="Проект"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">Проект <span>Prime</span></h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el5">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project-boxes_lg.jpg    1x,
+                        ./images/portfolio/project-boxes_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project-boxes_md.jpg    1x,
+                        ./images/portfolio/project-boxes_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project-boxes_sm.jpg    1x,
+                        ./images/portfolio/project-boxes_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/project-boxes_sm.jpg"
+                      alt="Проект"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">Проект <span lang="en">Boxes</span></h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el6">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/inspiration_lg.jpg    1x,
+                        ./images/portfolio/inspiration_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/inspiration_md.jpg    1x,
+                        ./images/portfolio/inspiration_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/inspiration_sm.jpg    1x,
+                        ./images/portfolio/inspiration_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/inspiration_sm.jpg"
+                      alt="Вдохновение не имеет границ "
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title"><span lang="en">Inspiration has no Borders</span></h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el7">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/limited-edition_lg.jpg    1x,
+                        ./images/portfolio/limited-edition_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/limited-edition_md.jpg    1x,
+                        ./images/portfolio/limited-edition_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/limited-edition_sm.jpg    1x,
+                        ./images/portfolio/limited-edition_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/limited-edition_sm.jpg"
+                      alt="Видання"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">Видання <span lang="en">Limited Edition</span></h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el8">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/project-lab_lg.jpg    1x,
+                        ./images/portfolio/project-lab_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/project-lab_md.jpg    1x,
+                        ./images/portfolio/project-lab_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/project-lab_sm.jpg    1x,
+                        ./images/portfolio/project-lab_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/project-lab_sm.jpg"
+                      alt="Проект лаб"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title">Проект <span lang="en">LAB</span></h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+            <li class="portfolio-cards__item" id="el9">
+              <div class="portfolio-link">
+                <div class="img-container">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/growing-business_lg.jpg    1x,
+                        ./images/portfolio/growing-business_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/growing-business_md.jpg    1x,
+                        ./images/portfolio/growing-business_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/growing-business_sm.jpg    1x,
+                        ./images/portfolio/growing-business_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="cards-img"
+                      src="./images/portfolio/growing-business_sm.jpg"
+                      alt="Бізнес"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  
+                </div>
+                <div class="card-group">
+                  <h2 class="cards-title" lang="en">Growing Business</h2>
+                  
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Подробнее
+                 </button>
+                 <button type="button" class="btn btn-outline-secondary" delete-btn>Удалить</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+    
+    </footer>
+   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Подробнее</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+        Все это позволит посетителю получить исчерпывающие сведения о компании или частное лицо.
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
